@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #39ff14;
+  text-shadow: 0 0 5px #39ff14;
+}
+
+.header-home {
+  background: #111;
+  padding: 1rem 0;
+  border-bottom: 1px solid #39ff14;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-wrap {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #39ff14;
+  outline: none;
+}
+
+#search-close-icon {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #39ff14;
+  cursor: pointer;
+}
+
+.sort-wrapper label {
+  margin-right: 10px;
+  color: #39ff14;
+}
+
+.pokemon-list .list-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.pokemon-card {
+  background: #1a1a1a;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #39ff14;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-card h3 {
+  margin: 0.5rem 0 0;
+  color: #fff;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #1a1a1a;
+  border: 2px solid #39ff14;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  color: #39ff14;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#not-found-message {
+  text-align: center;
+  color: red;
+  margin-top: 2rem;
+}
